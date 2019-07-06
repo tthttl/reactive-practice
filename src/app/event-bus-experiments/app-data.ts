@@ -20,7 +20,8 @@ class DataStore {
     }
 
     deleteLesson(deleted: Lesson) {
-        const lessons = _.remove(this.getValueFromSubject(),
+        const lessons = this.getValueFromSubject();
+        _.remove(lessons,
             lesson => lesson.id === deleted.id);
         this.broadcast(lessons);
     }

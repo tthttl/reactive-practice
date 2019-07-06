@@ -14,6 +14,10 @@ export class LessonsListComponent implements Observer<Lesson[]>, OnInit {
 
     lessons: Lesson[] = [];
 
+    constructor() {
+        this.next = this.next.bind(this);
+    }
+
     ngOnInit() {
         store.lessonsList$.subscribe(this);
     }
