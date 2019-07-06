@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {testLessons} from "../shared/model/test-lessons";
-import {Lesson} from "../shared/model/lesson";
-import {store} from "./app-data";
+import {testLessons} from '../shared/model/test-lessons';
+import {store} from './app-data';
 
 @Component({
     selector: 'event-bus-experiments',

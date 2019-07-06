@@ -1,6 +1,4 @@
-
-
-import {Lesson} from "./lesson";
+import {Lesson} from './lesson';
 
 export const testLessons: Lesson[] = [
     {
