@@ -25,13 +25,8 @@ import {CourseComponent} from './course/course.component';
 import {LessonDetailComponent} from './lesson-detail/lesson-detail.component';
 import {CoursesHttpService} from "./services/courses-http.service";
 import {SafeUrlPipe} from "./shared/pipes/safe-url.pipe";
-import { MessagesComponent } from './messages/messages.component';
-import {MessagesService} from "./services/messages.service";
-import { CreateLessonComponent } from './create-lesson/create-lesson.component';
-import {CourseDetailResolver} from "./course-detail/course-detail.resolver";
-import { LoadingComponent } from './loading/loading.component';
-import {firebaseConfig} from "../environments/firebase.config";
 import {AngularFireDatabaseModule} from "@angular/fire/database";
+import {AngularFireAuthModule} from "@angular/fire/auth";
 
 
 @NgModule({
@@ -61,6 +56,8 @@ import {AngularFireDatabaseModule} from "@angular/fire/database";
         HttpModule,
         FormsModule,
         AngularFireModule.initializeApp(firebaseConfig),
+        AngularFireDatabaseModule,
+        AngularFireAuthModule,
         RouterModule.forRoot(routerConfig),
         ReactiveFormsModule,
         AngularFireDatabaseModule
