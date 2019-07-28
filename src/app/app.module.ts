@@ -10,23 +10,29 @@ import {LessonsCounterComponent} from './lessons-counter/lessons-counter.compone
 import {HomeComponent} from './home/home.component';
 import {AngularFireModule} from '@angular/fire';
 import {RouterModule} from '@angular/router';
-import {routerConfig} from "./router.config";
+import {routerConfig} from './router.config';
 import {CourseDetailComponent} from './course-detail/course-detail.component';
-import {CoursesService} from "./services/courses.service";
+import {CoursesService} from './services/courses.service';
 import {CoursesListComponent} from './courses-list/courses-list.component';
 import {CourseDetailHeaderComponent} from './course-detail-header/course-detail-header.component';
 import {NewsletterComponent} from './newsletter/newsletter.component';
-import {NewsletterService} from "./services/newsletter.service";
+import {NewsletterService} from './services/newsletter.service';
 import {TopMenuComponent} from './top-menu/top-menu.component';
 import {LoginComponent} from './login/login.component';
-import {UserService} from "./services/user.service";
+import {UserService} from './services/user.service';
 import {AllLessonsComponent} from './all-lessons/all-lessons.component';
 import {CourseComponent} from './course/course.component';
 import {LessonDetailComponent} from './lesson-detail/lesson-detail.component';
-import {CoursesHttpService} from "./services/courses-http.service";
-import {SafeUrlPipe} from "./shared/pipes/safe-url.pipe";
-import {AngularFireDatabaseModule} from "@angular/fire/database";
-import {AngularFireAuthModule} from "@angular/fire/auth";
+import {CoursesHttpService} from './services/courses-http.service';
+import {SafeUrlPipe} from './shared/pipes/safe-url.pipe';
+import { MessagesComponent } from './messages/messages.component';
+import {MessagesService} from './services/messages.service';
+import { CreateLessonComponent } from './create-lesson/create-lesson.component';
+import {CourseDetailResolver} from './course-detail/course-detail.resolver';
+import { LoadingComponent } from './loading/loading.component';
+import {firebaseConfig} from '../environments/firebase.config';
+import {AngularFireDatabaseModule} from '@angular/fire/database';
+import {AngularFireAuthModule} from '@angular/fire/auth';
 
 
 @NgModule({

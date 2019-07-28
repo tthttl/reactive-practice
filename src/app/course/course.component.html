@@ -1,4 +1,3 @@
-
 <messages></messages>
 
 <div class="course-md">
@@ -16,17 +15,13 @@
 
     <ng-template #masterTpl>
 
-        <div class="lessons-nav" >
+        <div class="lessons-nav">
             <button (click)="previousLessonsPage()">Previous</button>
             <button (click)="nextLessonsPage()">Next</button>
         </div>
 
-        <lessons-list [lessons]="lessons$ | async"
-            (selected)="selectDetail($event)"></lessons-list>
+        <lessons-list [lessons]="lessons$ | async" (selected)="selectDetail($event)"></lessons-list>
 
     </ng-template>
 
-
-
 </div>
-
